@@ -16,6 +16,49 @@ $(document).ready(function () {
    console.log("high: " + response.items[0].general.temperature.high);
    $('#today-low').html(`${response.items[0].general.temperature.low}`);
    $('#today-high').html(`${response.items[0].general.temperature.high}`);
+
+   insertImage(todayWeather.toLowerCase());
+   
+    function insertImage(weather){
+      if (weather.includes("windy")){
+      
+         $('#weather-today-img').html('<img id="theImg" src="images/wind.gif" />')
+        
+      }
+      else if (weather.includes("fair")){
+      
+        $('#weather-today-img').html('<img id="theImg" src="images/fair.gif" />')
+       
+     }
+     else if (weather.includes("overcast")){
+      
+      $('#weather-today-img').html('<img id="theImg" src="images/overcast.gif" />')
+     
+   }
+   else if (weather.includes("rain")){
+      
+    $('#weather-today-img').html('<img id="theImg" src="images/rain.gif" />')
+   
+ }
+ else if (weather.includes("showers")){
+      
+  $('#weather-today-img').html('<img id="theImg" src="images/thunderstorm.gif" />')
+ 
+}
+else if (weather.includes("sunny")){
+      
+  $('#weather-today-img').html('<img id="theImg" src="images/sunny.gif" />')
+ 
+}
+else if (weather.includes("cloudy")){
+      
+  $('#weather-img').html('<img id="theImg" src="images/cloudy.gif" />')
+ 
+}
+else{
+  $('#weather-img').html('<img id="theImg" src="images/weather.gif" />')
+}
+    }
     });
     let today = new Date().toISOString().slice(0, 10)
    
