@@ -12,8 +12,77 @@ $(document).ready(function () {
       $('h4 span').html(`${response.items[0].forecasts[0].date}`);
      tmrWeather=response.items[0].forecasts[0].forecast;
      console.log(tmrWeather);
+
+     
+     var tempLow=response.items[0].forecasts[0].temperature.low;
+     var tempHigh=response.items[0].forecasts[0].temperature.high;
+     console.log("tommorrow temp low: " + response.items[0].forecasts[0].temperature.low);
    
+     console.log("tommorrow temp high: " + response.items[0].forecasts[0].temperature.high);
+     console.log("2 days later: " + response.items[0].forecasts[1].date);
+     $('#tmr-weather span').html(`${tmrWeather}`);
+     newGame(tempLow,tempHigh);
+     
+     
+    });
    
+    function newGame(temp,tempHigh) {
+	
+	
+  
+      $(document).on('click','#buttonArea',function(e){
+              event.preventDefault();
+              var tempInput=document.getElementById("userGuess").value;
+              if (tempInput>temp){
+                document.getElementById("feedback").innerHTML = "lower";
+                }
+                else if (tempInput<temp){
+                  document.getElementById("feedback").innerHTML = "higher";
+              
+                }
+                else if (tempInput==temp){
+                  document.getElementById("feedback").innerHTML = "yes";
+              
+                }
+              
+      });
+    
+      $(document).on('click','#buttonHigh',function(e){
+        event.preventDefault();
+        
+        var tempHigherInput=document.getElementById("userGuessHigher").value;
+        if (tempHigherInput>tempHigh){
+          document.getElementById("feedbackHigh").innerHTML = "lower";
+          }
+          else if (tempHigherInput<tempHigh){
+            document.getElementById("feedbackHigh").innerHTML = "higher";
+        
+          }
+          else if (tempHigherInput==tempHigh){
+            document.getElementById("feedbackHigh").innerHTML = "yes";
+        
+          }
+       
+});
+    
+    function checkVal(tempInput,temp){
+      var feedbackLow=document.getElementById("feedback").innerHTML
+      var feedbackHigh=document.getElementById("feedbackHigh").innerHTML
+      if (tempInput>temp){
+        document.getElementById("feedback").innerHTML = "lower";
+        }
+        else if (tempInput<temp){
+          document.getElementById("feedback").innerHTML = "higher";
+      
+        }
+        else if (tempInput==temp){
+          document.getElementById("feedback").innerHTML = "yes";
+      
+        }
+        //checkWeather();
+        
+    }
+  }
    
      $(document).on('click','#checkbutton',function(e){
              event.preventDefault();
@@ -78,10 +147,6 @@ else{
     }
    
      })
-   
-     
-    });
-   
    
    });
    
