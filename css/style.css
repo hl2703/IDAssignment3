@@ -1,0 +1,31 @@
+body{
+  background-color: rgba(162, 240, 250, 0.993);
+  text-align: center;
+}
+
+.game-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:50px;
+  border-radius: 25px;
+  width:800px;
+  text-align: center;
+ background-image: url("../images/village2.gif");
+ background-repeat: no-repeat;
+ height: 500px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+
+}
+.weather-img{
+  background-color: rgb(202, 123, 50);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+.weather-img img{
+  height: 200px;
+  width: 200px;
+}
