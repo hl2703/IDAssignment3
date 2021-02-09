@@ -3,7 +3,7 @@ $(document).ready(function () {
        "url": "https://api.data.gov.sg/v1/environment/4-day-weather-forecast",
        "method": "GET",
      };
-     var todayWeather;
+     
      var tmrWeather;
     $.ajax(settings).done(function (response) {
        console.log(response);
@@ -20,7 +20,7 @@ $(document).ready(function () {
    
      console.log("tommorrow temp high: " + response.items[0].forecasts[0].temperature.high);
      console.log("2 days later: " + response.items[0].forecasts[1].date);
-     $('#tmr-weather span').html(`${tmrWeather}`);
+     //$('#tmr-weather span').html(`${tmrWeather}`);
      newGame(tempLow,tempHigh);
      
      
@@ -108,41 +108,41 @@ $(document).ready(function () {
     function insertImage(weather){
       if (weather.includes("windy")){
       
-         $('#weather-img').html('<img id="theImg" src="images/wind.gif" />')
+         $('.weather-img').html('<img id="theImg" src="images/wind.gif" />')
         
       }
       else if (weather.includes("fair")){
       
-        $('#weather-img').html('<img id="theImg" src="images/fair.gif" />')
+        $('.weather-img').html('<img id="theImg" src="images/fair.gif" />')
        
      }
      else if (weather.includes("overcast")){
       
-      $('#weather-img').html('<img id="theImg" src="images/overcast.gif" />')
+      $('.weather-img').html('<img id="theImg" src="images/overcast.gif" />')
      
    }
    else if (weather.includes("rain")){
       
-    $('#weather-img').html('<img id="theImg" src="images/rain.gif" />')
+    $('.weather-img').html('<img id="theImg" src="images/rain.gif" />')
    
  }
  else if (weather.includes("showers")){
       
-  $('#weather-img').html('<img id="theImg" src="images/thunderstorm.gif" />')
+  $('.weather-img').html('<img id="theImg" src="images/thunderstorm.gif" />')
  
 }
 else if (weather.includes("sunny")){
       
-  $('#weather-img').html('<img id="theImg" src="images/sunny.gif" />')
+  $('.weather-img').html('<img id="theImg" src="images/sunny.gif" />')
  
 }
 else if (weather.includes("cloudy")){
       
-  $('#weather-img').html('<img id="theImg" src="images/cloudy.gif" />')
+  $('.weather-img').html('<img id="theImg" src="images/cloudy.gif" />')
  
 }
 else{
-  $('#weather-img').html('<img id="theImg" src="images/weather.gif" />')
+  $('.weather-img').html('<img id="theImg" src="images/weather.gif" />')
 }
     }
    
