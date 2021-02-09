@@ -30,7 +30,7 @@ $(document).ready(function () {
 	
 	
   
-      $(document).on('click','#buttonArea',function(e){
+      $(document).on('click','#buttonLow',function(e){
               event.preventDefault();
               var tempInput=document.getElementById("userGuess").value;
               if (tempInput>temp){
