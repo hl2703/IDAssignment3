@@ -1,4 +1,5 @@
 $(document).ready(function () { 
+    //$('[data-toggle="popover"]').popover();   
     var settings = {
        "url": "https://api.data.gov.sg/v1/environment/24-hour-weather-forecast",
        "method": "GET",

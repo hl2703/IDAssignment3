@@ -1,6 +1,6 @@
 body{
   background-color: rgba(162, 240, 250, 0.993);
-  text-align: center;
+  
 }
 
 .game-container {
@@ -10,22 +10,50 @@ body{
   border-radius: 25px;
   width:800px;
   text-align: center;
- background-image: url("../images/village2.gif");
- background-repeat: no-repeat;
- height: 500px;
+  background-image: url("../images/village2.gif");
+  background-repeat: no-repeat;
+  height: 500px;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 
 }
 .weather-img{
-  background-color: rgb(202, 123, 50);
+  background-color: rgba(122, 236, 221, 0.938);
   width: 200px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
 }
 .weather-img img{
-  height: 200px;
+  height: 100px;
+  width: 100px;
+}
+
+h4 span{
+  font-size: 30px;
+}
+.weather-container{
+  background-color: rgb(226, 137, 35);
   width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  
+}
+#characters img{
+  height:60px;
+}
+#hamster{
+  position:absolute; 
+  left:400px; 
+  top:400px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+ 
 }
