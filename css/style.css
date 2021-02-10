@@ -19,7 +19,7 @@ body{
 
 }
 .weather-img{
-  background-color: rgba(122, 236, 221, 0.938);
+ 
   width: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -35,7 +35,7 @@ h4 span{
 }
 .weather-container{
   background-color: rgb(226, 137, 35);
-  width: 200px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
@@ -91,9 +91,11 @@ nav img{
 .col-sm-4{
   margin-left: 70px;
   background-color: blanchedalmond;
+  border-radius: 25px;
 }
 .col-sm-6{
   background-color: aquamarine;
+  border-radius: 25px;
 }
 
 #game{
@@ -110,4 +112,11 @@ h1{
 }
 #title{
   height: 130px;
+}
+#today-weather{
+  font-size: 30px;
+  font-weight: bold;
+}
+.temperature-value{
+  font-size:20px;
 }
