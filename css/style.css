@@ -1,6 +1,6 @@
 body{
   background-color: rgba(162, 240, 250, 0.993);
-  
+  font-family: 'Dosis', sans-serif;
 }
 
 .game-container {
@@ -50,6 +50,30 @@ h4 span{
   top:400px;
 }
 
+#cat{
+  position:absolute; 
+  left:800px; 
+  top:300px;
+}
+
+#goat{
+  position:absolute; 
+  left:400px; 
+  top:240px;
+}
+
+#eagle{
+  position:absolute; 
+  left:500px; 
+  top:440px;
+}
+
+#sq{
+  position:absolute; 
+  left:820px; 
+  top:400px;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -79,4 +103,11 @@ nav img{
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
+}
+
+h1{
+  font-family: 'Potta One', cursive;
+}
+#title{
+  height: 130px;
 }

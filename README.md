@@ -15,3 +15,8 @@ background:
 https://www.pinterest.com/pin/632192866419220034/
 buttons:
 https://getbootstrap.com/docs/4.0/components/buttons/
+font:
+https://fonts.google.com/specimen/Potta+One?preview.size=34&sort=date&preview.text_type=custom&sidebar.open=true&selection.family=Potta+One
+
+heading: 
+https://cooltext.com/Render-Image?RenderID=376274933475715&LogoId=3762749334
