@@ -83,11 +83,19 @@ nav ul {
   top: 100px;
   left: 250px;
   text-align: left;
+  background-color: rgba(240, 248, 255, 0.575);
+  width:100px;
+  border-radius: 50px;
 }
 
-nav img{
-  height: 70px;
+
+li lottie-player{
+  margin: auto;
+  
+  
 }
+
+
 .col-sm-4{
   margin-left: 70px;
   background-color: blanchedalmond;
@@ -119,4 +127,22 @@ h1{
 }
 .temperature-value{
   font-size:20px;
+}
+
+#door{
+  position: absolute; right: 0; bottom: 0; 
+  height:50px;
+}
+.back lottie-player{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.back{
+  background-color: rgb(252, 229, 196);
+  width:70px;
+  height:70px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
 }
