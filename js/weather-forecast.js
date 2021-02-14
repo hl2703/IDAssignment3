@@ -33,17 +33,24 @@ $(document).ready(function () {
       $(document).on('click','#buttonLow',function(e){
               event.preventDefault();
               var tempInput=document.getElementById("userGuess").value;
+              var fb =document.getElementById("feedback");
+              var status=checkTemp(tempInput);
+              if (status){
               if (tempInput>temp){
-                document.getElementById("feedback").innerHTML = "lower";
+                fb.innerHTML = "Colder";
                 }
                 else if (tempInput<temp){
-                  document.getElementById("feedback").innerHTML = "higher";
+                  fb.innerHTML = "Warmer";
               
                 }
                 else if (tempInput==temp){
-                  document.getElementById("feedback").innerHTML = "yes";
+                 fb.innerHTML = "You are right!";
               
                 }
+              }
+              else{
+                fb.innerHTML = "Enter a number between 18 and 40.";
+              }
               
       });
     
@@ -51,23 +58,50 @@ $(document).ready(function () {
         event.preventDefault();
         
         var tempHigherInput=document.getElementById("userGuessHigher").value;
+        
+        var fbHigh=document.getElementById("feedbackHigh");
+        var status=checkTemp(tempHigherInput);
+        if (status){
         if (tempHigherInput>tempHigh){
-          document.getElementById("feedbackHigh").innerHTML = "lower";
+          fbHigh.innerHTML = "Colder";
           }
           else if (tempHigherInput<tempHigh){
-            document.getElementById("feedbackHigh").innerHTML = "higher";
+            fbHigh.innerHTML = "Warmer";
         
           }
           else if (tempHigherInput==tempHigh){
-            document.getElementById("feedbackHigh").innerHTML = "yes";
+            fbHigh.innerHTML = "You are right!";
         
           }
-       
+        }
+        else{
+          fbHigh.innerHTML = "Enter a number between 18 and 40.";
+        }
 });
+
+function checkTemp(temp){
+                            
+                    
+  if (isNaN(temp) || temp<=18 ||temp>40 ||temp=="") {             
+   
     
+    return false;
+    
+  } else {                                        
+     
+    return true;   
+        
+  }
+  
+  
+
+
+}
+   
     function checkVal(tempInput,temp){
       var feedbackLow=document.getElementById("feedback").innerHTML
       var feedbackHigh=document.getElementById("feedbackHigh").innerHTML
+      
       if (tempInput>temp){
         document.getElementById("feedback").innerHTML = "lower";
         }
@@ -86,12 +120,14 @@ $(document).ready(function () {
    
      $(document).on('click','#checkbutton',function(e){
              event.preventDefault();
+             
               var weatherInput = [];
      $.each($("input[name='weather']:checked"), function(){
      weatherInput.push($(this).val());
-     alert(weatherInput[0]);
+     //alert(weatherInput[0]);
+     
      var bool=tmrWeather.toLowerCase().includes(weatherInput[0])
-     alert(bool)
+    // alert(bool)
      if (bool){
      document.getElementById("feedback").innerHTML = "You predicted the same weather as the weather forecast!";
      }
@@ -101,8 +137,10 @@ $(document).ready(function () {
      }
      //checkWeather();
      $('#tmr-weather span').html(`${tmrWeather}`);
-     });
    
+    
+     });
+  
    insertImage(tmrWeather);
    
     function insertImage(weather){

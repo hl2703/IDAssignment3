@@ -20,3 +20,9 @@ https://fonts.google.com/specimen/Potta+One?preview.size=34&sort=date&preview.te
 
 heading: 
 https://cooltext.com/Render-Image?RenderID=376274933475715&LogoId=3762749334
+
+animations from: https://lottiefiles.com/
+pastel background:https://media.istockphoto.com/vectors/vector-illustration-sky-background-and-pastel-color-vector-id1153229458?k=6&m=1153229458&s=612x612&w=0&h=E4nTOa4e54gstwRk7uRwgtyR7t3M8SvnQ7NOBpQMCaA=
+
+gradient colours: https://www.grabient.com/
+text outline:https://stackoverflow.com/questions/4919076/outline-effect-to-text

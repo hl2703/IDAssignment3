@@ -15,28 +15,30 @@
   <body>
     
     <div class="game-container">
-      <h1>Guess the temperture tomorrow</h1>
+      <h1>What's the Temperature?</h1>
+      <h4>Tomorrow: <span></span></h4>
 		<div id="game">
             
-            <h4>Lowest temperature:</h4>
-			<p><br>
+            
+			<p><br>Lowest temperature:
             
             <a href="#" data-toggle="popover" data-content="Enter a number between 18-40"><input type="number" id="userGuess"/></a>
-            
+            <p id="feedback"></p>
             </p>
+           
             <button type="button" class="btn btn-outline-info" id="buttonLow">Guess</button>
-      <p id="feedback"></p>
-      <h4>Highest temperature:</h4>
-      <p><br>
+      
+      
+      <p>Highest temperature:
       <a href="#" data-toggle="popover" data-content="Enter a number between 18-40"><input type="number" id="userGuessHigher"/></a>
       
       </p>
-    
+      <p id="feedbackHigh"></p>
       <button type="button" class="btn btn-outline-info" id="buttonHigh">Guess</button>
-<p id="feedbackHigh"></p>
+
 			
         </div>
-       
+        <img src="images/cat2.gif" alt="cat" id="cat-game" data-toggle="popover" title="Pureen" data-content="Meow...Enter your guess and I'll give you hints.">
         
         <div class="back">
           <a href="index.html"><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_cvpiecar.json"  background="transparent"  speed="1"  style="width: 40px; height: 40px;" hover loop  ></lottie-player></a>

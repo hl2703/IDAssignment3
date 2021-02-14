@@ -25,9 +25,9 @@
         <form>
             
  
-          <label for="rdoWeather">Your Guess:</label><br/>
+          <label for="rdoWeather"><big>Your Guess:</big></label><br/>
           
-            <input type="radio" name="weather" value="rain">Rain
+            <input type="radio" name="weather" value="rain" checked="checked" >Rain
             <br>
             <input type="radio" name="weather" value="showers">Showers<br>
             <input type="radio" name="weather" value="fair">Fair<br>
@@ -37,7 +37,7 @@
             <input type="radio" name="weather" value="overcast">Overcast
             <br><br>
     
-            <p><button type="button" name="check" id="checkbutton" class="btn btn-outline-dark button">Check</button></p>
+            <p><button type="button" name="check" id="checkbutton" class="btn btn-outline-dark button">Guess</button></p>
            
             </form>
         </div>
@@ -56,7 +56,7 @@
        
         
     </div>
- 
+    <img src="images/eagle.gif" alt="eagle" id="eagle-game" data-toggle="popover" title="Master Wu" data-placement="left" data-content="Enter your guess on the left. I will only reveal the weather after you've guessed.">
     <div class="back">
         <a href="index.html"><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_cvpiecar.json"  background="transparent"  speed="1"  style="width: 40px; height: 40px;" hover loop  ></lottie-player></a>
         <p>Home</p>
@@ -69,6 +69,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="js/weather-forecast.js"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+        <script src="js/script.js"></script>
     </body>
 </html>
