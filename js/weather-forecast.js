@@ -101,41 +101,41 @@ $(document).ready(function () {
     function insertImage(weather){
       if (weather.includes("windy")){
 
-        $('.weather-img').html('<img src="../images/wind.gif" />')
+        $('.weather-img').html('<img src="images/wind.gif" />')
 
       }
       else if (weather.includes("fair")){
 
-        $('.weather-img').html('<img src="../images/fair.gif" />')
+        $('.weather-img').html('<img src="images/fair.gif" />')
 
       }
       else if (weather.includes("overcast")){
 
-        $('.weather-img').html('<img src="../images/overcast.gif" />')
+        $('.weather-img').html('<img src="images/overcast.gif" />')
 
       }
       else if (weather.includes("rain")){
 
-       $('.weather-img').html('<img src="../images/rain.gif" />')
+       $('.weather-img').html('<img src="images/rain.gif" />')
 
       }
       else if (weather.includes("showers")){
 
-        $('.weather-img').html('<img src="../images/thunderstorm.gif" />')
+        $('.weather-img').html('<img src="images/thunderstorm.gif" />')
 
       }
       else if (weather.includes("sunny")){
 
-       $('.weather-img').html('<img src="../images/sunny.gif" />')
+       $('.weather-img').html('<img src="images/sunny.gif" />')
 
       }
       else if (weather.includes("cloudy")){
 
-        $('.weather-img').html('<img src="../images/cloudy.gif" />')
+        $('.weather-img').html('<img src="images/cloudy.gif" />')
 
       }
       else{
-       $('.weather-img').html('<img src="../images/weather.gif" />')
+       $('.weather-img').html('<img src="images/weather.gif" />')
       }
     }
 
