@@ -187,3 +187,7 @@ h1{
 .toast{
   position: absolute;
 }
+
+form label{
+  font-size: 25px;
+}
