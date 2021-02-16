@@ -6,19 +6,11 @@ $(document).ready(function () {
 
   var tmrWeather;
   $.ajax(settings).done(function (response) {
-    //console.log(response);
-
-    //console.log("tmr: " + response.items[0].forecasts[0].date);
+  
     $('h4 span').html(`${response.items[0].forecasts[0].date}`); //display next day date
     tmrWeather=response.items[0].forecasts[0].forecast;
-    //console.log(tmrWeather);
     var tempLow=response.items[0].forecasts[0].temperature.low; //value of lowest temp tmr
     var tempHigh=response.items[0].forecasts[0].temperature.high;//value of highest temp tmr
-    //console.log("tommorrow temp low: " + response.items[0].forecasts[0].temperature.low);
-
-    //console.log("tommorrow temp high: " + response.items[0].forecasts[0].temperature.high);
-    //console.log("2 days later: " + response.items[0].forecasts[1].date);
-    //$('#tmr-weather span').html(`${tmrWeather}`);
     newGame(tempLow,tempHigh);
   });
 
@@ -89,10 +81,8 @@ $(document).ready(function () {
     var weatherInput = [];
     $.each($("input[name='weather']:checked"), function(){
     weatherInput.push($(this).val());
-    //alert(weatherInput[0]);
-
+ 
     var bool=tmrWeather.toLowerCase().includes(weatherInput[0])
-    // alert(bool)
     //display feeback based on user input
     if (bool){
       document.getElementById("feedback").innerHTML = "You predicted the same weather as the weather forecast!";
@@ -101,7 +91,6 @@ $(document).ready(function () {
       document.getElementById("feedback").innerHTML = "Hmm...not the same as the forecast, but who knows the weather may change tomorrow";
 
     }
-    //checkWeather();
     $('#tmr-weather span').html(`${tmrWeather}`);
 
 
@@ -112,41 +101,41 @@ $(document).ready(function () {
     function insertImage(weather){
       if (weather.includes("windy")){
 
-        $('.weather-img').html('<img src="images/wind.gif" />')
+        $('.weather-img').html('<img src="../images/wind.gif" />')
 
       }
       else if (weather.includes("fair")){
 
-        $('.weather-img').html('<img src="images/fair.gif" />')
+        $('.weather-img').html('<img src="../images/fair.gif" />')
 
       }
       else if (weather.includes("overcast")){
 
-        $('.weather-img').html('<img src="images/overcast.gif" />')
+        $('.weather-img').html('<img src="../images/overcast.gif" />')
 
       }
       else if (weather.includes("rain")){
 
-       $('.weather-img').html('<img src="images/rain.gif" />')
+       $('.weather-img').html('<img src="../images/rain.gif" />')
 
       }
       else if (weather.includes("showers")){
 
-        $('.weather-img').html('<img src="images/thunderstorm.gif" />')
+        $('.weather-img').html('<img src="../images/thunderstorm.gif" />')
 
       }
       else if (weather.includes("sunny")){
 
-       $('.weather-img').html('<img src="images/sunny.gif" />')
+       $('.weather-img').html('<img src="../images/sunny.gif" />')
 
       }
       else if (weather.includes("cloudy")){
 
-        $('.weather-img').html('<img src="images/cloudy.gif" />')
+        $('.weather-img').html('<img src="../images/cloudy.gif" />')
 
       }
       else{
-       $('.weather-img').html('<img src="images/weather.gif" />')
+       $('.weather-img').html('<img src="../images/weather.gif" />')
       }
     }
 

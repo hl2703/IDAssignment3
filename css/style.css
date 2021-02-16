@@ -1,10 +1,10 @@
 body{
   background-color: #c7ffa0;
-background-image: linear-gradient(0deg, #c7ffa0 0%, #f4c58f 29%, #f8bdd1 62%, #B5FFFC 100%);
+  background-image: linear-gradient(0deg, #c7ffa0 0%, #f4c58f 29%, #f8bdd1 62%, #B5FFFC 100%);
 
-background-position: center; /* Center the image */
-background-repeat: no-repeat; /* Do not repeat the image */
-background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 
   font-family: 'Dosis', sans-serif;
 }
@@ -102,13 +102,11 @@ nav li{
 li lottie-player{
   margin: auto;
   
-  
 }
-
 
 .col-sm-4{
   margin-left: 70px;
-  background-color: blanchedalmond;
+  background-color: rgb(255, 231, 196);
   border-radius: 25px;
 }
 .col-sm-6{

@@ -6,15 +6,10 @@ $(document).ready(function () {
   };
   var todayWeather;
   $.ajax(settings).done(function (response) {
-    //console.log(response);
-
-    //console.log("today: " + response.items[0].general.forecast);
+    
     todayWeather=response.items[0].general.forecast;
-    //console.log(todayWeather);
-    $('#today-weather span').html(`${todayWeather}`);//display current weather
 
-    //console.log("low: " + response.items[0].general.temperature.low);
-    //console.log("high: " + response.items[0].general.temperature.high);
+    $('#today-weather span').html(`${todayWeather}`);//display current weather
     $('#today-low').html(`${response.items[0].general.temperature.low}`);//display current temp range
     $('#today-high').html(`${response.items[0].general.temperature.high}`);
 
@@ -62,8 +57,6 @@ $(document).ready(function () {
   }
   });
   let today = new Date().toISOString().slice(0, 10)
-
-  //console.log(today)
   $('h4 span').html(`${today}`);//display today's date
       
    });
