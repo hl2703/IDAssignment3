@@ -56,34 +56,33 @@ Testing
   2. check if feedback matches guess(whether user guessed the same as the weather forecast)
   3. check if weather forecast is displayed along with the weather animation
 
-github link:  https://hl2703.github.io/IDAssignment3/
-github repo link: https://github.com/hl2703/IDAssignment3
+Github links
+- github link:  https://hl2703.github.io/IDAssignment3/
+- github repo link: https://github.com/hl2703/IDAssignment3
 
-Credits:
-Content
-API used:
-https://api.data.gov.sg/v1/environment/4-day-weather-forecast
-https://api.data.gov.sg/v1/environment/24-hour-weather-forecast
+Credits:(Content)
+- API used:
+* https://api.data.gov.sg/v1/environment/4-day-weather-forecast
+* https://api.data.gov.sg/v1/environment/24-hour-weather-forecast
 
-Bootstrap functions: 
-https://getbootstrap.com/docs/4.5/components/alerts/
-https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp
-
-buttons:
-https://getbootstrap.com/docs/4.0/components/buttons/
-font:
+- Bootstrap functions: 
+* https://getbootstrap.com/docs/4.5/components/alerts/
+* https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp
+* buttons:https://getbootstrap.com/docs/4.0/components/buttons/
+  
+- font:
 https://fonts.google.com/
 
-text outline:https://stackoverflow.com/questions/4919076/outline-effect-to-text
-CSS background image: https://www.w3schools.com/cssref/pr_background-image.asp
+- text outline:https://stackoverflow.com/questions/4919076/outline-effect-to-text
+- CSS background image: https://www.w3schools.com/cssref/pr_background-image.asp
 
 Media
-icons from: https://freeicons.io/
-characters from :https://chriiscrossing.tumblr.com/post/139062353525/villager-spritespixels
-background from:https://www.pinterest.com/pin/632192866419220034/
-heading: https://cooltext.com/Render-Image?RenderID=376274933475715&LogoId=3762749334
-animations from: https://lottiefiles.com/
-gradient colours: https://www.grabient.com/
+- icons from: https://freeicons.io/
+- characters from :https://chriiscrossing.tumblr.com/post/139062353525/villager-spritespixels
+- background from:https://www.pinterest.com/pin/632192866419220034/
+- heading: https://cooltext.com/Render-Image?RenderID=376274933475715&LogoId=3762749334
+- animations from: https://lottiefiles.com/
+- gradient colours: https://www.grabient.com/
 
 Acknowledgements:
 I received inspiration from role-playing games like animal crossing and maple story
