@@ -24,10 +24,16 @@ body{
   background-size: cover;
 
 }
+#forecast-container{
+  background-image: url("../images/river.gif");
+}
+#temperature-container{
+  background-image: url("../images/bg.gif");
+}
 .weather-img{
  
   width: 200px;
-  height:130px;
+  height:100px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
@@ -42,13 +48,18 @@ h4 span{
 }
 .weather-container{
   background-color: rgba(255, 162, 75, 0.973);
-  
+  border-color: brown;
+  border-width: 1.8px;
+  border-style: solid;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   font-weight: bold;
   font-size: 20px;
+}
+#forecast{
+  border-style: none;
 }
 #characters img{
   height:50px;
@@ -89,10 +100,12 @@ nav ul {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  
   position: relative;
   
   background-color: rgba(240, 248, 255, 0.575);
   width:200px;
+  height:80px;
   border-radius: 20px;
 }
 
@@ -108,14 +121,23 @@ li lottie-player{
   margin-left: 70px;
   background-color: rgb(255, 231, 196);
   border-radius: 25px;
+  border-color: brown;
+  border-width: 1.8px;
+  border-style: solid;
 }
 .col-sm-6{
   background-color: aquamarine;
-  border-radius: 25px;
+  border-radius: 25px; 
+  border-color: rgba(14, 28, 155, 0.521);
+  border-width: 1.8px;
+  border-style: solid;
 }
 
 #game{
   background-color: rgb(250, 208, 118);
+  border-color: brown;
+  border-width: 1.8px;
+  border-style: solid;
   width: 400px;
   height: 305px;
   margin-left: auto;
@@ -149,16 +171,18 @@ h1{
 .back lottie-player{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
+
 }
 .back{
   background-color: rgb(252, 229, 196);
-  width:70px;
-  height:70px;
+  width:60px;
+  height:60px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50px;
-  
+  border-color: brown;
+  border-width: 1.8px;
+  border-style: solid;
 }
 #feedback, #feedbackHigh {
   color: red;

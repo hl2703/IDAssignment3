@@ -1,7 +1,7 @@
 # IDAssignment3
 Weather Village
 
-Weather Village is a weather forecast app designed for the desktop which displays the current weather and allows users to guess the weather and temperature tomorrow. It is not like an ordinary weather forecast app, which only displays the weather. Weather village aims to create user interactivity and visual appeal by recreating a weather forecast in the form of a game. It allows users to input their weather predictions and check against the weather forecast, a temperature guessing game as well as having colourful visuals and characters. It also contains in-game characters which users can click on to read their dialogue. This will make it engaging for users and create a fun experience for them. 
+Weather Village is a weather forecast app designed for the desktop which displays the current weather in Singapore and allows users to guess the weather and temperature tomorrow. It is not like an ordinary weather forecast app, which only displays the weather. Weather village aims to create user interactivity and visual appeal by recreating a weather forecast in the form of a game. It allows users to input their weather predictions and check against the weather forecast, a temperature guessing game as well as having colourful visuals and characters. It also contains in-game characters which users can click on to read their dialogue. This will make it engaging for users and create a fun experience for them. 
 
 Design process:
 Weather village is designed for anyone who wishes to find out the weather, but in a fun, visual and interactive way. Weather village is inspired by role-playing games which involves players taking the role of a main character, which meets other in-game characters along the way. These games typically involves character dialogues and tasks being issued to the main character to complete. Weather village contains characters and mini games held by the in-game characters. Hence, the design, setting and game play is also largely inspired by these games, to make the weather forecast app engaging for users. To create the character dialogues and game layout, Bootstrap was used which allows more user interactivity. The weather forecast API from data.gov.sg was used to display the weather. The creation of this app involved first displaying the weather with the weather api, then coming out with the mini guessing games. During the design process, I had to look for suitable game background and fonts that will fit the theme of the game, as well as game characters to make the game more interesting. The colour scheme is brown, orange, green and blue as those are the colours of nature and village huts. I also designed the game title to make it look more visually appealing. Animations from lottiefiles.com was used, such as the weather and for the buttons.
@@ -79,7 +79,10 @@ https://fonts.google.com/
 Media
 - icons from: https://freeicons.io/
 - characters from :https://chriiscrossing.tumblr.com/post/139062353525/villager-spritespixels
-- background from:https://www.pinterest.com/pin/632192866419220034/
+- home background from:https://www.pinterest.com/pin/632192866419220034/
+- forecast background : https://in.pinterest.com/pin/455778424794310824/
+- temperature background: https://www.pinterest.com/pin/411657222190990961/
+- 
 - heading: https://cooltext.com/Render-Image?RenderID=376274933475715&LogoId=3762749334
 - animations from: https://lottiefiles.com/
 - gradient colours: https://www.grabient.com/
