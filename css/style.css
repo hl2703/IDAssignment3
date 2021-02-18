@@ -48,7 +48,7 @@ h4 span{
 }
 .weather-container{
   background-color: rgba(255, 162, 75, 0.973);
-  border-color: brown;
+  border-color: rgba(219, 99, 29, 0.603);
   border-width: 1.8px;
   border-style: solid;
   width: 280px;
@@ -121,21 +121,21 @@ li lottie-player{
   margin-left: 70px;
   background-color: rgb(255, 231, 196);
   border-radius: 25px;
-  border-color: brown;
+  border-color: rgba(236, 142, 79, 0.863);
   border-width: 1.8px;
   border-style: solid;
 }
 .col-sm-6{
   background-color: aquamarine;
   border-radius: 25px; 
-  border-color: rgba(14, 28, 155, 0.521);
+  border-color: rgba(53, 69, 204, 0.425);
   border-width: 1.8px;
   border-style: solid;
 }
 
 #game{
   background-color: rgb(250, 208, 118);
-  border-color: brown;
+  border-color: rgba(165, 42, 42, 0.822);
   border-width: 1.8px;
   border-style: solid;
   width: 400px;
@@ -180,9 +180,12 @@ h1{
   margin-left: auto;
   margin-right: auto;
   border-radius: 50px;
-  border-color: brown;
+  border-color: rgba(184, 115, 52, 0.575);
   border-width: 1.8px;
   border-style: solid;
+}
+.back p{
+  font-size:12px;
 }
 #feedback, #feedbackHigh {
   color: red;
