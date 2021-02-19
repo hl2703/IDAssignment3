@@ -60,21 +60,21 @@ Github links
 - github link:  https://hl2703.github.io/IDAssignment3/
 - github repo link: https://github.com/hl2703/IDAssignment3
 
+Pitch link: https://drive.google.com/file/d/1JXrOBssp563KjT8gp-7AlnGRIZogOFJx/view?usp=sharing
+
 Credits:(Content)
 - API used:
 * https://api.data.gov.sg/v1/environment/4-day-weather-forecast
 * https://api.data.gov.sg/v1/environment/24-hour-weather-forecast
-
 - Bootstrap functions: 
 * https://getbootstrap.com/docs/4.5/components/alerts/
 * https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp
 * buttons:https://getbootstrap.com/docs/4.0/components/buttons/
-  
 - font:
 https://fonts.google.com/
-
 - text outline:https://stackoverflow.com/questions/4919076/outline-effect-to-text
 - CSS background image: https://www.w3schools.com/cssref/pr_background-image.asp
+- CSS flip image: https://www.w3schools.com/howto/howto_css_flip_image.asp
 
 Media
 - icons from: https://freeicons.io/
@@ -82,7 +82,6 @@ Media
 - home background from:https://www.pinterest.com/pin/632192866419220034/
 - forecast background : https://in.pinterest.com/pin/455778424794310824/
 - temperature background: https://www.pinterest.com/pin/411657222190990961/
-- 
 - heading: https://cooltext.com/Render-Image?RenderID=376274933475715&LogoId=3762749334
 - animations from: https://lottiefiles.com/
 - gradient colours: https://www.grabient.com/
