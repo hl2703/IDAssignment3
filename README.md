@@ -16,11 +16,11 @@ The current weather and temperature is displayed on the main page. Click on the 
 Current features:
 -  game title on main page
 -  Current weather and temperature displayed with weather animations
--  In-game characters, Character dialogues: Users can click on each character to read their dialogue
+-  In-game characters and character dialogues: Users can click on each character to read their dialogue
 -  Weather forecast navigation menu: for users to navigate to weather forecast and temperature games
--  weather guessing game-users can guess the weather against the weather forecast
--  temperature guessing game-users can guess the temperature of the next day
--  buttons with animations-home button, weather forecast and temperature buttons play animations on hover
+-  weather guessing game: users can guess the weather against the weather forecast
+-  temperature guessing game: users can guess the temperature of the next day
+-  buttons with animations: home button, weather forecast and temperature buttons play animations on hover
 -  validation of temperature guessing game: users have to enter a number between 18 and 40, an error message will be shown if not within range
 
 Features left to implement:
